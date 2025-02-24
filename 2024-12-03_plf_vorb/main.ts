@@ -1,5 +1,5 @@
 import { fakerDE } from "@faker-js/faker";
-function newPerson() {
+function NewPerson() {
   const gender = fakerDE.person.sexType();
   const vorn = fakerDE.person.firstName(gender);
   const nachn = fakerDE.person.lastName();
@@ -9,6 +9,6 @@ function newPerson() {
 }
 if (import.meta.main) {
   for (let i = 1; i <= 10; i++) {
-    console.log(newPerson());
+    console.log(NewPerson());
   }
 }
